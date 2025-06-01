@@ -1,5 +1,37 @@
 * {
     margin: 0;
     padding: 0;
+    color: #f0db65e7;
+    
 }
 
+.banner {
+    background-color: blue;
+    height: 100vh;
+    padding: 20px;
+    background-image: url("./img/banner.jpg") ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h1 {
+    padding: 5px;
+    font-size: 50px ;
+}
+
+.banner img {
+    width: 250px;
+    border-radius: 100%;
+    padding: 20px;
+}
