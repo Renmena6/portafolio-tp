@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    color: #f5ba1af8;
-    
+    color: #f5ba1af8; 
 }
-body {
-background-color:ghostwhite;
 
+body {
+    background-color: ghostwhite;
 }
+
 section {
     padding: 20px;
 }
@@ -16,14 +16,12 @@ section {
     background-color: blue;
     height: 100vh;
     padding: 20px;
-    background-image: url("./img/banner.jpg") ;
+    background-image: url("./img/banner.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-    
-    
 }
 
 .presentacion {
@@ -31,9 +29,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgba(250, 235, 215, 0);
-    width:500px;
-    
+    background-color: rgba(250, 235, 215, 0);
+    width: 500px;
 }
 
 .presentacion h2 {
@@ -42,60 +39,73 @@ section {
 
 h1 {
     padding: 5px;
-    font-size: 50px ;
+    font-size: 50px;
 }
 
 .banner img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; 
+    border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ffffff; 
+    border: 2px solid #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin-top: 10px;
 }
 
-.about-me h2, p {
+.about-me h2,
+.about-me p { 
     text-align: center;
-    padding: 15x;
+    padding: 15px; 
     font-size: 23px;
 }
+
 .about-me p {
     padding: 15px;
     font-size: 20px;
-    color:#666;
+    color: #666;
 }
 
 .skills {
     text-align: center;
     padding-bottom: 20px;
 }
+
+
 .grid-conteiner {
     display: grid;
     background-color: rgb(247, 244, 244);
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    position: relative;
-    align-items: center;
-    gap:30px;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr); 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
-.grid-conteiner div {
 
-background-color: beige;
-text-align: center;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
-
-}
-
-.grid-conteiner div h3 {
-    font-size: 23px;
-    padding: 10px ;
+.grid-item { 
+    background-color: beige;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
+    
     
 }
 
-.grid-conteiner div p {
+
+.last-item {
+    grid-column: 2 / span 2; 
+    width: 250px;
+    margin-left: 140px;
+}
+
+.grid-item h3 { 
+    font-size: 23px;
+    padding: 10px;
+}
+
+
+.grid-item p { 
     font-size: 20px;
     color: #666;
     line-height: 1.6;
