@@ -21,18 +21,23 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
     
     
 }
 
 .presentacion {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgba(250, 235, 215, 0.322);
-    width:500px
-    ;
+    background-color:rgba(250, 235, 215, 0);
+    width:500px;
     
+}
+
+.presentacion h2 {
+    text-align: center;
 }
 
 h1 {
@@ -53,26 +58,45 @@ h1 {
 .about-me h2, p {
     text-align: center;
     padding: 15x;
+    font-size: 23px;
 }
 .about-me p {
     padding: 15px;
+    font-size: 20px;
+    color:#666;
 }
 
+.skills {
+    text-align: center;
+    padding-bottom: 20px;
+}
 .grid-conteiner {
     display: grid;
     background-color: rgb(247, 244, 244);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    position: relative;
+    align-items: center;
     gap:30px;
 }
 
 .grid-conteiner div {
 
 background-color: beige;
-padding: 10px;
 text-align: center;
 padding: 30px;
 border-radius: 10px;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
 
+}
 
+.grid-conteiner div h3 {
+    font-size: 23px;
+    padding: 10px ;
+    
+}
+
+.grid-conteiner div p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
 }
