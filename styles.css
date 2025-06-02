@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: ghostwhite;
+    background-color:  rgb(247, 244, 244);
 }
 
 section {
@@ -13,15 +13,15 @@ section {
 }
 
 .banner {
-    background-color: blue;
-    height: 100vh;
-    padding: 20px;
-    background-image: url("./img/banner.jpg");
+    height: 100vh; 
+    padding: 20px; 
+    background-image: url("./img/banner.jpg"); 
     background-size: cover;
+    background-position: center; 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
+    justify-content: center; 
+    align-items: center; 
+    
 }
 
 .presentacion {
@@ -75,29 +75,24 @@ h1 {
     display: grid;
     background-color: rgb(247, 244, 244);
     gap: 30px;
-    grid-template-columns: repeat(4, 1fr); 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
 .grid-item { 
-    background-color: beige;
+    background-color:  rgb(247, 244, 244);
     text-align: center;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
+
     
     
 }
-
-
-.last-item {
-    grid-column: 2 / span 2; 
-    width: 250px;
-    margin-left: 140px;
-}
+    
 
 .grid-item h3 { 
     font-size: 23px;
