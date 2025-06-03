@@ -193,3 +193,11 @@ button {
     
 
 }
+
+.social-links li {
+    padding: 10px;
+}
+.social-links ul, a, li {
+    list-style: none;
+    display: inline-block;
+}
