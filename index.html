@@ -11,22 +11,23 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Renzo Mena</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Sobre mi</a>
-                        <a class="nav-link" href="#">Habilidades y tecnologias</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link" href="#habilidades">Habilidades y tecnologías</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="home"> 
             <div class="presentacion">
                 <div class="perfil-conteiner">
                     <img src="./img/ren.jpg" alt="ren">
@@ -35,15 +36,17 @@
                 <h2>Hola, bienvenidos a mi potfolio, soy ren y mi objetivo es ser desarrollador full stack</h2>
             </div>
         </section>
-        <section>
+
+        <section id="sobre-mi"> 
             <div class="about-me">
                 <h2>Un poco sobre mí</h2>
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolorem ab at quidem, blanditiis mollitia. Velit iure consectetur necessitatibus maxime debitis officiis quasi ipsum provident in! Blanditiis officia soluta exercitationem?</p>
             </div>
         </section>
-        <h2 class="skills"> Habilidades técnicas</h2>
 
-        <section class="grid-conteiner">
+        <h2 class="skills"> Habilidades y tecnologías</h2>
+
+        <section class="grid-conteiner" id="habilidades"> 
             
             <div class="grid-item">
                 <img width="100" height="100" src="https://img.icons8.com/color/100/microsoft-office-2019.png" alt="microsoft-office-2019"/>
@@ -71,14 +74,16 @@
             </div>
         </section>
 
-        <!--Seccion Contacto--> 
-
-        <section class="contact-section">
+        <section class="contact-section" id="contacto"> 
             <h2>Contacto</h2>
             <form class="contact-form">
                 <div class="form-group">
-                    <label for="full-name">Nombre completo:</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
@@ -92,7 +97,7 @@
                 <div class="social-links">
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/renzo-mena/" target="_blank" rel="noopener noreferrer">
                                 <img width="50" height="50" src="https://img.icons8.com/color/100/linkedin.png" alt="linkedin"/>
                             </a>
                         </li>
