@@ -103,6 +103,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.295);
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
     .grid-item:hover {
     transform: translateY(-20px); 
@@ -200,4 +201,9 @@ button {
 .social-links ul, a, li {
     list-style: none;
     display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px); 
 }
