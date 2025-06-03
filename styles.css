@@ -2,51 +2,47 @@
     margin: 0;
     padding: 0;
     font-family: "Plus Jakarta Sans", 'Gill Sans';
-
-    
+    box-sizing: border-box;
 }
 
 body {
-    background-color:  rgb(247, 244, 244);
-    
+    background-color: rgb(247, 244, 244);
 }
 
 header {
     position: fixed;
     width: 100%;
-
+    z-index: 1000;
 }
 
 section {
     padding: 20px;
-    
 }
 
 .banner {
-    height: 100vh; 
-    padding: 20px; 
-    background-image: url("./img/banner.jpg"); 
+    height: 100vh;
+    padding: 20px;
+    background-image: url("./img/banner.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    background-color: rgba(226, 208, 184, 0.168); 
-    max-width: 700px; 
-    padding: 30px; 
-    border-radius: 15px; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    justify-content: center;
+    background-color: rgba(226, 208, 184, 0.168);
+    max-width: 700px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    color: #dbd3d3; 
+    color: #dbd3d3;
 }
 
 .perfil-conteiner {
@@ -74,16 +70,19 @@ section {
     margin-top: 10px;
 }
 
-.about-me{
-    background-color:  rgb(247, 244, 244);
+.about-me {
+    background-color: rgb(247, 244, 244);
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
     padding: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-me h2,
-.about-me p { 
+.about-me p {
     text-align: center;
 }
 
@@ -100,20 +99,17 @@ section {
     padding-bottom: 20px;
 }
 
-
 .grid-conteiner {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    
 }
 
-
-.grid-item { 
-    background-color:  rgb(247, 244, 244);
+.grid-item {
+    background-color: rgb(247, 244, 244);
     text-align: center;
     padding: 30px;
     border-radius: 10px;
@@ -121,57 +117,55 @@ section {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-    .grid-item:hover {
-    transform: translateY(-20px); 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+
+.grid-item:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.grid-item h3 { 
+.grid-item h3 {
     font-size: 23px;
     padding: 10px;
 }
 
-
-.grid-item p { 
+.grid-item p {
     font-size: 20px;
     color: #666;
     line-height: 1.6;
 }
 
 .contact-section {
-    padding: 60px 20px; 
-    text-align: center; 
-    }
+    padding: 60px 20px;
+    text-align: center;
+}
 
 .contact-section h2 {
-    color: #333333; 
-    margin-bottom: 40px; 
+    color: #333333;
+    margin-bottom: 40px;
     font-size: 36px;
-    }
+}
 
 .contact-form {
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 600px;
+    margin: 0 auto;
     padding: 30px;
-    background-color:   rgb(247, 244, 244);
+    background-color: rgb(247, 244, 244);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .form-group {
     text-align: left;
-    display:flex;
+    display: flex;
     flex-direction: column;
-
 }
 
 .form-group label {
     font-size: 18px;
-    color: #666; 
+    color: #666;
     margin-bottom: 8px;
     font-weight: bold;
 }
@@ -189,15 +183,14 @@ section {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: rgba(236, 185, 74, 0.667); 
-    outline: none; 
-    
+    border-color: rgba(236, 185, 74, 0.667);
+    outline: none;
 }
 
 button {
     padding: 10px;
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     color: #666;
     cursor: pointer;
     border: 1px solid rgba(128, 128, 128, 0.604);
@@ -205,73 +198,101 @@ button {
 }
 
 .contact-form button:hover {
-    background-color:rgb(248, 214, 79); 
+    background-color: rgb(248, 214, 79);
     border-radius: 8px;
-    
-
 }
 
 .social-links li {
     padding: 10px;
 }
-.social-links ul, a, li {
+
+.social-links ul,
+a,
+li {
     list-style: none;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
 .social-links a:hover {
-    transform: translateY(-3px); 
-} 
+    transform: translateY(-3px);
+}
 
 @media (max-width: 480px) {
 
     .banner {
-        padding: 10px; 
-        width:100%;
-        
-        
+        padding: 0;
+        width: 100%;
     }
 
     .presentacion {
-        
-        width: 95%; 
-        margin: 0 auto; 
-        padding: 20px; 
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
     }
 
     .presentacion h1 {
-        font-size: 40px; 
-        
+        font-size: 36px;
     }
 
-    
+    .banner img {
+        width: 120px;
+        height: 120px;
+    }
+
     .about-me {
-        width: 95%; 
-        margin: 30px auto; 
-        padding: 15px; 
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
     }
 
     .about-me h2,
     .about-me p {
-        font-size: 18px; 
-        line-height: 1.5; 
-        letter-spacing: normal; 
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: normal;
     }
-
 
     .contact-form {
-       
-        width: 95%; 
-        margin: 0 auto; 
-        padding: 20px; 
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
     }
 
-    
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+
     .grid-conteiner {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px; 
-        padding: 10px; 
+        gap: 15px;
+        padding: 10px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .grid-item h3 {
+        font-size: 18px;
+    }
+
+    .grid-item p {
+        font-size: 14px;
     }
 
     .grid-item:hover {
@@ -280,6 +301,14 @@ button {
         color: #585555;
     }
 
-}
-    
+    .social-links ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
 
+    .social-links li {
+        padding: 5px 10px;
+    }
+
+}
