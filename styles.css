@@ -221,3 +221,22 @@ button {
 .social-links a:hover {
     transform: translateY(-3px); 
 } 
+
+@media ((max-width: 500px)) {
+
+    .grid-conteiner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     .grid-item:hover {
+    transform:inherit;
+    background-color:rgb(248, 214, 79);
+    color: #585555;
+    
+}
+
+}
+    
+    
+   
