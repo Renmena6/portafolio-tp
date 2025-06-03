@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: "Plus Jakarta Sans", 'Gill Sans';
     
 }
 
 body {
     background-color:  rgb(247, 244, 244);
-    font-family: Arial, sans-serif;
     
 }
 
@@ -40,9 +39,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-color: rgba(226, 208, 184, 0.24); 
-    max-width: 800px; 
-    width: 90%;
+    background-color: rgba(226, 208, 184, 0.168); 
+    max-width: 700px; 
     padding: 30px; 
     border-radius: 15px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
@@ -59,10 +57,10 @@ section {
     text-align: center;
 }
 
-h1 {
+.presentacion h1 {
     padding: 5px;
     font-size: 50px;
-    color: rgb(236, 185, 74);
+    color: rgb(219, 169, 61);
 }
 
 .banner img {
@@ -196,7 +194,8 @@ h1 {
 button {
     padding: 10px;
     font-size: 18px;
-    font-weight:400;
+    font-weight:bold;
+    color: #666;
     cursor: pointer;
     border: 1px solid rgba(128, 128, 128, 0.604);
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -229,7 +228,7 @@ button {
         grid-template-columns: repeat(2, 1fr);
     }
 
-     .grid-item:hover {
+    .grid-item:hover {
     transform:inherit;
     background-color:rgb(248, 214, 79);
     color: #585555;
@@ -238,5 +237,4 @@ button {
 
 }
     
-    
-   
+
