@@ -31,14 +31,14 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-color: rgba(226, 208, 184, 0.555); 
-    max-width: 600px; 
+    background-color: rgba(226, 208, 184, 0.24); 
+    max-width: 800px; 
     width: 90%;
     padding: 30px; 
     border-radius: 15px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
     text-align: center;
-    color: #333; 
+    color: #dbd3d3; 
 }
 
 .perfil-conteiner {
@@ -119,3 +119,6 @@ h1 {
     color: #666;
     line-height: 1.6;
 }
+
+
+
