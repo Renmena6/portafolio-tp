@@ -224,11 +224,11 @@ button {
     transform: translateY(-3px); 
 } 
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
 
-   
     .banner {
         padding: 10px; 
+        width:100%;
         
         
     }
